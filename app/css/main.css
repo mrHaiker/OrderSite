@@ -617,7 +617,7 @@ header .header-nav .logo {
   height: 100%;
   width: 294px;
   margin: 0 auto;
-  background: url(../../img/logo.png) no-repeat center;
+  background: url(../img/logo.png) no-repeat center;
   background-size: contain;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -719,7 +719,7 @@ header .header-nav nav ul#btn-contact li .fa-user::before {
   content: '';
   width: 12px;
   height: 12px;
-  background: url(../../img/person.svg) no-repeat center;
+  background: url(../img/person.svg) no-repeat center;
 }
 @media (max-width: 991px) {
   header .header-nav nav ul#btn-contact li {
@@ -818,7 +818,7 @@ header .preview::before {
   }
 }
 header .preview #title {
-  background: url(../../img/title.png) no-repeat center;
+  background: url(../img/title.png) no-repeat center;
   background-size: contain;
   height: 62px;
   width: 100%;
@@ -839,7 +839,7 @@ header .preview .content-box::before {
   right: 17px;
   width: 120px;
   height: 145px;
-  background: url(../../img/shape_6.png) no-repeat center;
+  background: url(../img/shape_6.png) no-repeat center;
 }
 @media (max-width: 991px) {
   header .preview .content-box::before {
@@ -852,7 +852,7 @@ header .preview .content-box::after {
   width: 100%;
   height: 95%;
   display: block;
-  background: url(../../img/imagine.png) no-repeat center;
+  background: url(../img/imagine.png) no-repeat center;
   background-size: contain;
 }
 @media (max-width: 767px) {
@@ -903,28 +903,28 @@ header .preview #clouds .cloud {
 header .preview #clouds .first-cloud {
   top: 193px;
   right: 90px;
-  background: url(../../img/cloud1.svg) no-repeat center;
+  background: url(../img/cloud1.svg) no-repeat center;
   -webkit-animation: moveCloud1 141s infinite;
           animation: moveCloud1 141s infinite;
 }
 header .preview #clouds .second-cloud {
   top: 147px;
   left: 123px;
-  background: url(../../img/cloud2.svg) no-repeat center;
+  background: url(../img/cloud2.svg) no-repeat center;
   -webkit-animation: moveCloud2 112s infinite;
           animation: moveCloud2 112s infinite;
 }
 header .preview #clouds .third-cloud {
   top: 482px;
   right: 0;
-  background: url(../../img/cloud3.svg) no-repeat center;
+  background: url(../img/cloud3.svg) no-repeat center;
   -webkit-animation: moveCloud3 184s infinite;
           animation: moveCloud3 184s infinite;
 }
 header .preview #clouds .fourth-cloud {
   top: 387px;
   left: 221px;
-  background: url(../../img/cloud4.svg) no-repeat center;
+  background: url(../img/cloud4.svg) no-repeat center;
   -webkit-animation: moveCloud4 241s infinite;
           animation: moveCloud4 241s infinite;
 }
@@ -1199,19 +1199,19 @@ header .bottom-nav .wrapper .visible-list {
 }
 #about-our-service .first-circle::before {
   content: '';
-  background: url(../../img/Rectangle_21.png) no-repeat center;
+  background: url(../img/Rectangle_21.png) no-repeat center;
 }
 #about-our-service .second-circle::before {
   content: '';
-  background: url(../../img/Check.png) no-repeat center;
+  background: url(../img/Check.png) no-repeat center;
 }
 #about-our-service .third-circle::before {
   content: '';
-  background: url(../../img/Rounded_Rectangle.png) no-repeat center;
+  background: url(../img/Rounded_Rectangle.png) no-repeat center;
 }
 #about-our-service .fourth-circle::before {
   content: '';
-  background: url(../../img/support_24.png) no-repeat center;
+  background: url(../img/support_24.png) no-repeat center;
 }
 #about-our-service .article {
   text-align: center;
@@ -1325,7 +1325,7 @@ header .bottom-nav .wrapper .visible-list {
   position: absolute;
   bottom: 73px;
   right: -171px;
-  background: url(../../img/Tree_Leaf.png) no-repeat center;
+  background: url(../img/Tree_Leaf.png) no-repeat center;
   z-index: -1;
 }
 @media (max-width: 767px) {
@@ -1356,7 +1356,7 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #first-time {
   height: 90%;
   width: 100%;
-  background: url(../../img/FIRST_TIME.png) no-repeat center;
+  background: url(../img/FIRST_TIME.png) no-repeat center;
 }
 @media (max-width: 1610px) {
   #discount .bg-image #first-time {
@@ -1368,7 +1368,7 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #clothes-tag {
   top: 40px;
   left: 3%;
-  background: url(../../img/clothes-tag.svg) no-repeat center;
+  background: url(../img/clothes-tag.svg) no-repeat center;
 }
 @media (min-width: 1200px) {
   #discount .bg-image #clothes-tag {
@@ -1383,12 +1383,14 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #clothes-tag-1 {
   top: 200px;
   left: 1453px;
-  background: url(../../img/ClothesTag.svg) no-repeat center;
+  background: url(../img/ClothesTag.svg) no-repeat center;
 }
 #discount .bg-image #percentage-label {
   top: 184px;
   left: 7.4%;
-  background: url(../../img/PercentageLabel.svg) no-repeat center;
+  background: url(../img/PercentageLabel.svg) no-repeat center;
+  -webkit-animation: spin 12.8s linear infinite;
+          animation: spin 12.8s linear infinite;
 }
 @media (max-width: 767px) {
   #discount .bg-image #percentage-label {
@@ -1403,7 +1405,7 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #percentage-label-1 {
   top: 270px;
   left: 77%;
-  background: url(../../img/PercentageLabel-1.svg) no-repeat center;
+  background: url(../img/PercentageLabel-1.svg) no-repeat center;
 }
 @media (min-width: 1200px) {
   #discount .bg-image #percentage-label-1 {
@@ -1418,7 +1420,7 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #percentage-discount {
   top: 246px;
   left: 22%;
-  background: url(../../img/PercentageDiscount.svg) no-repeat center;
+  background: url(../img/PercentageDiscount.svg) no-repeat center;
 }
 @media (max-width: 767px) {
   #discount .bg-image #percentage-discount {
@@ -1432,12 +1434,12 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #percentage-discount-1 {
   top: 134px;
   left: 1012px;
-  background: url(../../img/PercentageDiscount-1.svg) no-repeat center;
+  background: url(../img/PercentageDiscount-1.svg) no-repeat center;
 }
 #discount .bg-image #give-money {
   top: 40px;
   left: 34%;
-  background: url(../../img/GiveMoney.svg) no-repeat center;
+  background: url(../img/GiveMoney.svg) no-repeat center;
 }
 @media (max-width: 767px) {
   #discount .bg-image #give-money {
@@ -1451,7 +1453,9 @@ header .bottom-nav .wrapper .visible-list {
 #discount .bg-image #give-money-1 {
   top: 49px;
   left: 1392px;
-  background: url(../../img/GiveMoney-1.svg) no-repeat center;
+  background: url(../img/GiveMoney-1.svg) no-repeat center;
+  -webkit-animation: blick 10.8s linear infinite;
+          animation: blick 10.8s linear infinite;
 }
 #discount .wrapper {
   width: 100%;
@@ -1469,6 +1473,11 @@ header .bottom-nav .wrapper .visible-list {
   font-size: 30px;
   margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+  #discount .wrapper .container h3 {
+    font-size: 26px;
+  }
+}
 #discount .wrapper .container h3 span {
   font-weight: 500;
 }
@@ -1477,19 +1486,151 @@ header .bottom-nav .wrapper .visible-list {
   width: 100%;
   max-width: 360px;
   margin: 0 auto 35px;
-  border: 3px solid #fff;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 300;
 }
 #discount .wrapper .container .btn-discount p {
   color: #ffffff;
   line-height: 64px;
-  font-size: 26px;
+  font-size: 30px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  #discount .wrapper .container .btn-discount p {
+    font-size: 26px;
+  }
+}
+#discount .wrapper .container .btn-discount p span {
+  font-weight: 500;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes blick {
+  0% {
+    opacity: 6;
+  }
+  5% {
+    opacity: .4;
+  }
+  7% {
+    opacity: .1;
+  }
+  31% {
+    opacity: 1;
+  }
+  38% {
+    opacity: .7;
+  }
+  42% {
+    opacity: .9;
+  }
+  62% {
+    opacity: .3;
+  }
+  72% {
+    opacity: 1;
+  }
+}
+@keyframes blick {
+  0% {
+    opacity: 6;
+  }
+  5% {
+    opacity: .4;
+  }
+  7% {
+    opacity: .1;
+  }
+  31% {
+    opacity: 1;
+  }
+  38% {
+    opacity: .7;
+  }
+  42% {
+    opacity: .9;
+  }
+  62% {
+    opacity: .3;
+  }
+  72% {
+    opacity: 1;
+  }
+}
+#review {
+  height: 410px;
+  border-bottom: 1px solid #000000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+@media (max-width: 767px) {
+  #review {
+    height: 350px;
+  }
+}
+#review .content-box {
+  padding: 0;
+}
+#review #btn-prev,
+#review #btn-next {
+  height: 100%;
+  float: left;
+  font-size: 60px;
+  padding: 0;
+  cursor: pointer;
+}
+#review #btn-prev:before,
+#review #btn-next:before {
+  content: '';
+  height: 100px;
+  width: 48px;
+  background: url(../img/CustomArrow_desktop.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  opacity: .6;
+  color: #000;
+}
+@media (max-width: 767px) {
+  #review #btn-prev:before,
+  #review #btn-next:before {
+    background: url(../img/CustomArrow_mobile.svg) no-repeat center;
+  }
+}
+#review #btn-next:before {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+#review .content {
+  height: 100%;
+  padding: 0;
+  background: #999;
 }

@@ -19,7 +19,7 @@
     #first-time {
       height: 90%;
       width: 100%;
-      background: url(../../img/FIRST_TIME.png) no-repeat center;
+      background: url(../img/FIRST_TIME.png) no-repeat center;
       @media (max-width: 1610px) {
         width: 90%;
         margin: 0 5%;
@@ -31,7 +31,7 @@
     #clothes-tag {
       top: 40px;
       left: 3%;
-      background: url(../../img/clothes-tag.svg) no-repeat center;
+      background: url(../img/clothes-tag.svg) no-repeat center;
       @media (min-width: 1200px) {
         left: 11.6%;
       }
@@ -42,14 +42,15 @@
     #clothes-tag-1 {
       top: 200px;
       left: 1453px;
-      background: url(../../img/ClothesTag.svg) no-repeat center;
+      background: url(../img/ClothesTag.svg) no-repeat center;
     }
 
     // Percentage-label
     #percentage-label {
       top: 184px;
       left: 7.4%;
-      background: url(../../img/PercentageLabel.svg) no-repeat center;
+      background: url(../img/PercentageLabel.svg) no-repeat center;
+      animation: spin 12.8s linear infinite;
       @media (max-width: 767px) {
         top: -515px;
         left: -500px;
@@ -62,7 +63,7 @@
     #percentage-label-1 {
       top: 270px;
       left: 77%;
-      background: url(../../img/PercentageLabel-1.svg) no-repeat center;
+      background: url(../img/PercentageLabel-1.svg) no-repeat center;
       @media (min-width: 1200px) {
         left: 73%;
       }
@@ -75,7 +76,7 @@
     #percentage-discount {
       top: 246px;
       left: 22%;
-      background: url(../../img/PercentageDiscount.svg) no-repeat center;
+      background: url(../img/PercentageDiscount.svg) no-repeat center;
       @media (max-width: 767px) {
         top: 215px;
         left: 7%;
@@ -87,14 +88,14 @@
     #percentage-discount-1 {
       top: 134px;
       left: 1012px;
-      background: url(../../img/PercentageDiscount-1.svg) no-repeat center;
+      background: url(../img/PercentageDiscount-1.svg) no-repeat center;
     }
 
     // Give-money
     #give-money {
       top: 40px;
       left: 34%;
-      background: url(../../img/GiveMoney.svg) no-repeat center;
+      background: url(../img/GiveMoney.svg) no-repeat center;
       @media (max-width: 767px) {
         top: 25px;
         left: 72%;
@@ -106,7 +107,8 @@
     #give-money-1 {
       top: 49px;
       left: 1392px;
-      background: url(../../img/GiveMoney-1.svg) no-repeat center;
+      background: url(../img/GiveMoney-1.svg) no-repeat center;
+      animation: blick 10.8s linear infinite;
     }
   }
   .wrapper {
@@ -122,6 +124,9 @@
         color: #fff;
         font-size: 30px;
         margin-bottom: 25px;
+        @media (max-width: 767px) {
+          font-size: 26px;
+        }
         span {
           font-weight: 500;
         }
@@ -131,20 +136,43 @@
         width: 100%;
         max-width: 360px;
         margin: 0 auto 35px;
-        border: 3px solid #fff;
-        border-radius: 6px;
+        border: 2px solid #fff;
+        border-radius: 5px;
         box-sizing: border-box;
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: 300;
         p {
           color: #ffffff;
           line-height: 64px;
-          font-size: 26px;
+          font-size: 30px;
           margin: 0;
+          @media (max-width: 767px) {
+            font-size: 26px;
+          }
+          span {
+            font-weight: 500;
+          }
         }
       }
     }
   }
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+
+@keyframes blick {
+  0% { opacity: 6; }
+  5% { opacity: .4; }
+  7% { opacity: .1; }
+  31% { opacity: 1; }
+  38% { opacity: .7; }
+  42% { opacity: .9; }
+  62% { opacity: .3; }
+  72% { opacity: 1; }
 }
