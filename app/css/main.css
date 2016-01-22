@@ -1362,6 +1362,11 @@ header .bottom-nav .wrapper .visible-list {
     top: 5px;
   }
 }
+#discount .bg-image #clothes-tag-1 {
+  top: 200px;
+  left: 1453px;
+  background: url(../../img/ClothesTag.svg) no-repeat center;
+}
 #discount .bg-image #percentage-label {
   top: 184px;
   left: 7.4%;
@@ -1376,43 +1381,6 @@ header .bottom-nav .wrapper .visible-list {
     opacity: 0;
     background-size: contain;
   }
-}
-#discount .bg-image #percentage-discount {
-  top: 246px;
-  left: 22%;
-  background: url(../../img/PercentageDiscount.svg) no-repeat center;
-}
-@media (max-width: 767px) {
-  #discount .bg-image #percentage-discount {
-    top: 215px;
-    left: 7%;
-    height: 40px;
-    width: 40px;
-    background-size: contain;
-  }
-}
-#discount .bg-image #give-money {
-  top: 40px;
-  left: 72%;
-  background: url(../../img/GiveMoney.svg) no-repeat center;
-}
-@media (min-width: 1200px) {
-  #discount .bg-image #give-money {
-    left: 34%;
-  }
-}
-@media (max-width: 767px) {
-  #discount .bg-image #give-money {
-    top: 25px;
-    height: 32px;
-    width: 32px;
-    background-size: contain;
-  }
-}
-#discount .bg-image #percentage-discount-1 {
-  top: 134px;
-  left: 1012px;
-  background: url(../../img/PercentageDiscount-1.svg) no-repeat center;
 }
 #discount .bg-image #percentage-label-1 {
   top: 270px;
@@ -1429,13 +1397,41 @@ header .bottom-nav .wrapper .visible-list {
     top: 136px;
   }
 }
+#discount .bg-image #percentage-discount {
+  top: 246px;
+  left: 22%;
+  background: url(../../img/PercentageDiscount.svg) no-repeat center;
+}
+@media (max-width: 767px) {
+  #discount .bg-image #percentage-discount {
+    top: 215px;
+    left: 7%;
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+  }
+}
+#discount .bg-image #percentage-discount-1 {
+  top: 134px;
+  left: 1012px;
+  background: url(../../img/PercentageDiscount-1.svg) no-repeat center;
+}
+#discount .bg-image #give-money {
+  top: 40px;
+  left: 34%;
+  background: url(../../img/GiveMoney.svg) no-repeat center;
+}
+@media (max-width: 767px) {
+  #discount .bg-image #give-money {
+    top: 25px;
+    left: 72%;
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+  }
+}
 #discount .bg-image #give-money-1 {
   top: 49px;
   left: 1392px;
   background: url(../../img/GiveMoney-1.svg) no-repeat center;
-}
-#discount .bg-image #clothes-tag-1 {
-  top: 200px;
-  left: 1453px;
-  background: url(../../img/ClothesTag.svg) no-repeat center;
 }

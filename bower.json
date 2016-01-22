@@ -19,7 +19,6 @@
   "dependencies": {
     "jquery": "~2.2.0",
     "normalize-css": "~3.0.3",
-    "font-awesome": "fontawesome#~4.5.0",
-    "Boostrap Grid": "bootstrap-grid-css#*"
+    "font-awesome": "fontawesome#~4.5.0"
   }
 }

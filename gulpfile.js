@@ -1,7 +1,6 @@
 "use strict";
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
     uncss = require('gulp-uncss'),
     browserSync = require('browser-sync'),
     clean = require('gulp-clean'),
