@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700);
 body {
   font-family: 'Ubuntu', 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .container {
   padding-right: 15px;
@@ -981,6 +982,7 @@ header .bottom-nav .wrapper ul#list-services {
     margin: 10px 0;
     width: 57%;
     left: 0;
+    padding-left: 15px;
   }
 }
 header .bottom-nav .wrapper ul#list-services li {
@@ -1013,9 +1015,19 @@ header .bottom-nav .wrapper ul#list-services li a {
     padding: 20px 18px;
   }
 }
+@media (max-width: 991px) {
+  header .bottom-nav .wrapper ul#list-services li a {
+    padding: 0 15px;
+    display: inline-block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
 header .bottom-nav .wrapper ul#list-services li i {
   position: absolute;
   right: 0;
+  top: 0;
   margin: 16px 15px;
   color: #ffffff;
 }
@@ -1239,6 +1251,8 @@ header .bottom-nav .wrapper .visible-list {
   max-width: 588px;
   margin: 24px auto;
   font-size: 30px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 @media (max-width: 991px) {
   #about-our-service .order {
@@ -1254,7 +1268,7 @@ header .bottom-nav .wrapper .visible-list {
 }
 #about-our-service .order p {
   height: 100%;
-  width: 41%;
+  width: 39%;
   margin: 0;
   line-height: 75px;
   display: block;
@@ -1265,6 +1279,7 @@ header .bottom-nav .wrapper .visible-list {
 }
 @media (max-width: 767px) {
   #about-our-service .order p {
+    width: 41%;
     text-align: center;
   }
 }
@@ -1274,8 +1289,9 @@ header .bottom-nav .wrapper .visible-list {
   }
 }
 #about-our-service .order .btn {
+  display: block;
   height: 100%;
-  width: 55.25%;
+  width: 60.25%;
   float: left;
   background: #f17c2d;
   -webkit-border-radius: 7px;
@@ -1288,8 +1304,9 @@ header .bottom-nav .wrapper .visible-list {
   transition: all .3s ease;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #about-our-service .order .btn {
+    width: 55.25%;
     line-height: 68px;
     white-space: nowrap;
     overflow: hidden;
@@ -1306,9 +1323,10 @@ header .bottom-nav .wrapper .visible-list {
   height: 200px;
   width: 220px;
   position: absolute;
-  bottom: 69px;
+  bottom: 73px;
   right: -171px;
   background: url(../../img/Tree_Leaf.png) no-repeat center;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   #about-our-service .order .btn::before {
@@ -1434,4 +1452,44 @@ header .bottom-nav .wrapper .visible-list {
   top: 49px;
   left: 1392px;
   background: url(../../img/GiveMoney-1.svg) no-repeat center;
+}
+#discount .wrapper {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+#discount .wrapper .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+#discount .wrapper .container h3 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+#discount .wrapper .container h3 span {
+  font-weight: 500;
+}
+#discount .wrapper .container .btn-discount {
+  height: 70px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 35px;
+  border: 3px solid #fff;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#discount .wrapper .container .btn-discount p {
+  color: #ffffff;
+  line-height: 64px;
+  font-size: 26px;
+  margin: 0;
 }

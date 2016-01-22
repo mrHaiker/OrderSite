@@ -92,6 +92,7 @@
     max-width: 588px;
     margin: 24px auto;
     font-size: 30px;
+    transition: all .3s ease;
     @media (max-width: 991px) {
       margin: 24px auto 87px;
     }
@@ -103,7 +104,7 @@
     }
     p {
       height: 100%;
-      width: 41%;
+      width: 39%;
       margin: 0;
       line-height: 75px;
       display: block;
@@ -112,6 +113,7 @@
       white-space: nowrap;
       overflow: hidden;
       @media (max-width: 767px) {
+        width: 41%;
         text-align: center;
       }
       .minify-width {
@@ -121,8 +123,9 @@
       }
     }
     .btn {
+      display: block;
       height: 100%;
-      width: 55.25%;
+      width: 60.25%;
       float: left;
       background: @orange;
       border-radius: 7px;
@@ -132,7 +135,8 @@
       position: relative;
       transition: all .3s ease;
       border: 1px solid rgba(0,0,0,0);
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
+        width: 55.25%;
         line-height: 68px;
         white-space: nowrap;
         overflow: hidden;
@@ -147,9 +151,10 @@
         height: 200px;
         width: 220px;
         position: absolute;
-        bottom: 69px;
+        bottom: 73px;
         right: -171px;
         background: url(../../img/Tree_Leaf.png) no-repeat center;
+        z-index: -1;
         @media (max-width: 767px) {
           display: none;
         }

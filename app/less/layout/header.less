@@ -350,6 +350,7 @@ header {
           margin: 10px 0;
           width: 57%;
           left: 0;
+          padding-left: 15px;
         }
         li {
           display: inline;
@@ -373,12 +374,18 @@ header {
             font-weight: 300;
             @media (max-width: 1150px) {
               padding: 20px 18px;
-
+            }
+            @media (max-width: 991px) {
+              padding: 0 15px;
+              display: inline-block;
+              width: 100%;
+              box-sizing: border-box;
             }
           }
           i {
             position: absolute;
             right: 0;
+            top: 0;
             margin: 16px 15px;
             color: #ffffff;
           }
