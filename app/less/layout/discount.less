@@ -1,0 +1,106 @@
+#discount {
+  height: 390px;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(135deg, @blue, #74b6ff);
+  overflow: hidden;
+  @media (max-width: 767px) {
+    height: 296px;
+  }
+
+
+  .bg-image {
+    li {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      transition: all 2s ease;
+    }
+    #first-time {
+      height: 90%;
+      width: 100%;
+      background: url(../../img/FIRST_TIME.png) no-repeat center;
+      @media (max-width: 1610px) {
+        width: 90%;
+        margin: 0 5%;
+        background-size: contain;
+      }
+    }
+    #clothes-tag {
+      top: 40px;
+      left: 3%;
+      background: url(../../img/clothes-tag.svg) no-repeat center;
+      @media (min-width: 1200px) {
+        left: 11.6%;
+      }
+      @media (max-width: 767px) {
+        top: 5px;
+      }
+    }
+    #percentage-label {
+      top: 184px;
+      left: 7.4%;
+      background: url(../../img/PercentageLabel.svg) no-repeat center;
+      @media (max-width: 767px) {
+        top: -515px;
+        left: -500px;
+        height: 1000px;
+        width: 1000px;
+        opacity: 0;
+        background-size: contain;
+      }
+    }
+    #percentage-discount {
+      top: 246px;
+      left: 22%;
+      background: url(../../img/PercentageDiscount.svg) no-repeat center;
+      @media (max-width: 767px) {
+        top: 215px;
+        left: 7%;
+        height: 40px;
+        width: 40px;
+        background-size: contain;
+      }
+    }
+    #give-money {
+      top: 40px;
+      left: 72%;
+      background: url(../../img/GiveMoney.svg) no-repeat center;
+      @media (min-width: 1200px) {
+        left: 34%;
+      }
+      @media (max-width: 767px) {
+        top: 25px;
+        height: 32px;
+        width: 32px;
+        background-size: contain;
+      }
+    }
+    #percentage-discount-1 {
+      top: 134px;
+      left: 1012px;
+      background: url(../../img/PercentageDiscount-1.svg) no-repeat center;
+    }
+    #percentage-label-1 {
+      top: 270px;
+      left: 77%;
+      background: url(../../img/PercentageLabel-1.svg) no-repeat center;
+      @media (min-width: 1200px) {
+        left: 73%;
+      }
+      @media (max-width: 767px) {
+        top: 136px;
+      }
+    }
+    #give-money-1 {
+      top: 49px;
+      left: 1392px;
+      background: url(../../img/GiveMoney-1.svg) no-repeat center;
+    }
+    #clothes-tag-1 {
+      top: 200px;
+      left: 1453px;
+      background: url(../../img/ClothesTag.svg) no-repeat center;
+    }
+  }
+}

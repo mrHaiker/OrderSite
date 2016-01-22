@@ -1,0 +1,159 @@
+#about-our-service {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 688px;
+  border-bottom: 1px solid #777;
+  padding-top: 38px;
+
+
+    .circle {
+      height: 174px;
+      width: 174px;
+      margin: 63px auto 28px;
+      border-radius: 50%;
+      border: 1px solid @lightBlue;
+      position: relative;
+      text-align: left;
+      @media (max-width: 767px) {
+        height: 124px;
+        width: 124px;
+        margin: 0 auto 15px;
+      }
+    }
+    .first-circle::before,
+    .second-circle::before,
+    .third-circle::before,
+    .fourth-circle::before {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-size: contain;
+      @media (max-width: 767px) {
+        height: 76px;
+        width: 76px;
+        left: 50%;
+        top: 50%;
+        margin-left: -38px;
+        margin-top: -38px;
+        background-size: contain !important;
+      }
+    }
+
+    .first-circle::before {
+      content: '';
+      background: url(../../img/Rectangle_21.png) no-repeat center;
+    }
+    .second-circle::before {
+      content: '';
+      background: url(../../img/Check.png) no-repeat center;
+    }
+    .third-circle::before {
+      content: '';
+      background: url(../../img/Rounded_Rectangle.png) no-repeat center;
+    }
+    .fourth-circle::before {
+      content: '';
+      background: url(../../img/support_24.png) no-repeat center;
+    }
+
+  .article {
+    text-align: center;
+    min-height: 1px;
+    h3 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: @blue;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    p {
+      color: #9f9f9f;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      height: 140px;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media (max-width: 991px) {
+        height: 100px;
+      }
+      @media (max-width: 767px) {
+        height: 160px;
+      }
+    }
+  }
+
+  .order {
+    height: 75px;
+    width: 100%;
+    max-width: 588px;
+    margin: 24px auto;
+    font-size: 30px;
+    @media (max-width: 991px) {
+      margin: 24px auto 87px;
+    }
+    @media (max-width: 767px) {
+      height: 68px;
+      font-size: 22px;
+      margin: 8px auto 87px;
+
+    }
+    p {
+      height: 100%;
+      width: 41%;
+      margin: 0;
+      line-height: 75px;
+      display: block;
+      float: left;
+      color: #000;
+      white-space: nowrap;
+      overflow: hidden;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      .minify-width {
+        @media (max-width: 400px) {
+          display: none;
+        }
+      }
+    }
+    .btn {
+      height: 100%;
+      width: 55.25%;
+      float: left;
+      background: @orange;
+      border-radius: 7px;
+      text-align: center;
+      line-height: 75px;
+      color: #fff;
+      position: relative;
+      transition: all .3s ease;
+      border: 1px solid rgba(0,0,0,0);
+      @media (max-width: 767px) {
+        line-height: 68px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &:hover {
+        border: 1px solid @orange;
+        background: none;color: @orange;
+      }
+      &::before {
+        content: '';
+        height: 200px;
+        width: 220px;
+        position: absolute;
+        bottom: 69px;
+        right: -171px;
+        background: url(../../img/Tree_Leaf.png) no-repeat center;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
