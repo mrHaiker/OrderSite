@@ -144,6 +144,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: 300;
+        transition: all .3s linear;
+        &:hover {
+          background: #ffffff;
+          box-shadow: 0 0 24px rgba(0,0,0,.5);
+          p {
+            color: @blue;
+          }
+        }
         @media (max-width: 767px) {
           max-width: 260px;
         }

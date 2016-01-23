@@ -63,7 +63,12 @@ header {
           text-transform: capitalize;
           transition: padding .2s ease;
           &:hover {
-            border-bottom: 3px solid #fff;
+            @media (min-width: 992px) {
+              border-bottom: 3px solid #fff;
+            }
+            a {
+              color: @blue !important;
+            }
           }
           @media (max-width: 1199px) {
             padding: 0 10px;
@@ -100,6 +105,10 @@ header {
           display: inline-block;
           color: #ffffff;
           line-height: @heightNav;
+          cursor: pointer;
+          &:hover {
+            color: @blue;
+          }
           .fa-comment,
           .fa-user {
             line-height: 34px;
@@ -165,6 +174,7 @@ header {
       font-size: 16px;
       color: @lightBlue;
       margin: 15px;
+      cursor: pointer;
       i {
         transform: rotate(0deg);
         transition: all .3s ease;

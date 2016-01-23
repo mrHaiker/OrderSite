@@ -653,8 +653,13 @@ header .header-nav nav ul#nav li {
   -webkit-transition: padding .2s ease;
   transition: padding .2s ease;
 }
-header .header-nav nav ul#nav li:hover {
-  border-bottom: 3px solid #fff;
+@media (min-width: 992px) {
+  header .header-nav nav ul#nav li:hover {
+    border-bottom: 3px solid #fff;
+  }
+}
+header .header-nav nav ul#nav li:hover a {
+  color: #3789D3 !important;
 }
 @media (max-width: 1199px) {
   header .header-nav nav ul#nav li {
@@ -697,6 +702,10 @@ header .header-nav nav ul#btn-contact li {
   display: inline-block;
   color: #ffffff;
   line-height: 95px;
+  cursor: pointer;
+}
+header .header-nav nav ul#btn-contact li:hover {
+  color: #3789D3;
 }
 header .header-nav nav ul#btn-contact li .fa-comment,
 header .header-nav nav ul#btn-contact li .fa-user {
@@ -767,6 +776,7 @@ header .header-nav #list-contact {
   font-size: 16px;
   color: #5ea4f2;
   margin: 15px;
+  cursor: pointer;
 }
 header .header-nav #list-menu i,
 header .header-nav #list-contact i {
@@ -1516,6 +1526,16 @@ header .bottom-nav .wrapper .visible-list {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 300;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+#discount .wrapper .container .btn-discount:hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+#discount .wrapper .container .btn-discount:hover p {
+  color: #3789D3;
 }
 @media (max-width: 767px) {
   #discount .wrapper .container .btn-discount {
@@ -1682,10 +1702,10 @@ header .bottom-nav .wrapper .visible-list {
   line-height: 27px;
   margin-bottom: 12px;
   position: relative;
-  max-height: 180px;
 }
 @media (max-width: 767px) {
   #review .content li.slide .wrapper p.message {
+    max-height: 180px;
     padding: 35px 0 15px;
   }
 }
