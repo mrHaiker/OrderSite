@@ -78,4 +78,52 @@ $(function () {
     });
 
 
+    // Slider
+    $('#arrow-next').click(function () {
+        var currentSlide = $('.active-slide');
+        var nextSlide = currentSlide.next();
+
+        if(nextSlide.length === 0) nextSlide = $('.slide').first();
+
+        currentSlide.fadeOut(600).removeClass('active-slide');
+        nextSlide.fadeIn(600).addClass('active-slide');
+    });
+    $('#arrow-prev').click(function() {
+        var currentSlide = $('.active-slide');
+        var prevSlide = currentSlide.prev();
+
+        if(prevSlide.length === 0) prevSlide = $('.slide').last();
+
+        currentSlide.fadeOut(600).removeClass('active-slide');
+        prevSlide.fadeIn(600).addClass('active-slide');
+    });
+
+    // Контент слайдера
+    $.getJSON('../json/review.json', function (data) {
+        console.log(data);
+        var $content = $('#review .content');
+
+        for (var i = 0; i < data.length; i++) {
+            var temp = data[i];
+            var $slide = $('<li>').addClass('slide');
+            var $wrapper = $('<div>').addClass('wrapper');
+            var $message = $('<p>').addClass('message');
+            var $author = $('<p>').addClass('author');
+            var $stars = $('<div>').addClass('stars');
+
+            if (i == 0) $slide.addClass('active-slide');
+
+            $wrapper.append($message.text(temp.text));
+
+            $wrapper.append($author.text(temp.name +', '+ temp.country +', '+ temp.city));
+            $wrapper.append($stars.append(
+                getStars($stars, temp.stars)
+            ));
+
+
+            $slide.append($wrapper);
+            $content.append($slide);
+        }
+    })
+
 });

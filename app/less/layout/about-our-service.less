@@ -100,7 +100,10 @@
       height: 68px;
       font-size: 22px;
       margin: 8px auto 87px;
-
+    }
+    @media (max-width: 400px) {
+      height: 102px;
+      margin: 24px auto 37px;
     }
     p {
       height: 100%;
@@ -116,10 +119,9 @@
         width: 41%;
         text-align: center;
       }
-      .minify-width {
-        @media (max-width: 400px) {
-          display: none;
-        }
+      @media (max-width: 400px) {
+        height: 50px;
+        width: 100%;
       }
     }
     .btn {
@@ -141,6 +143,11 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      @media (max-width: 400px) {
+        margin: 20px 0;
+        height: 75px;
+        width: 100%;
       }
       &:hover {
         border: 1px solid @orange;

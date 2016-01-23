@@ -9,3 +9,12 @@ function changeIconMenu (icon, obj) {
         $icon.addClass(obj);
     }
 }
+
+function getStars (obj, num) {
+    for (var i = 0; i < 5; i++) {
+        var $star = $('<i>').addClass('fa fa-star');
+        if ( i < num) $star.css('color', '#ffc000');
+
+        obj.append($star);
+    }
+}
