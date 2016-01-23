@@ -1330,6 +1330,7 @@ header .bottom-nav .wrapper .visible-list {
     margin: 20px 0;
     height: 75px;
     width: 100%;
+    line-height: 75px;
   }
 }
 #about-our-service .order .btn:hover {
@@ -1655,7 +1656,7 @@ header .bottom-nav .wrapper .visible-list {
   overflow: hidden;
 }
 #review .content li.slide {
-  display: none;
+  display: table;
   height: 100%;
   text-align: center;
 }
@@ -1676,7 +1677,7 @@ header .bottom-nav .wrapper .visible-list {
   line-height: 27px;
   margin-bottom: 12px;
   position: relative;
-  max-height: 246px;
+  max-height: 260px;
   overflow: auto;
 }
 #review .content li.slide .wrapper p.message:before {
@@ -1699,7 +1700,4 @@ header .bottom-nav .wrapper .visible-list {
   color: #cacaca;
   font-size: 12px;
   margin: 0 1px;
-}
-#review .content .active-slide {
-  display: table !important;
 }
