@@ -86,7 +86,7 @@ $(function () {
         if(nextSlide.length === 0) nextSlide = $('.slide').first();
 
         currentSlide.fadeOut(600).removeClass('active-slide');
-        nextSlide.fadeIn(900).addClass('active-slide');
+        nextSlide.fadeIn(800).addClass('active-slide');
     });
     $('#arrow-prev').click(function() {
         var currentSlide = $('.active-slide');
@@ -95,7 +95,7 @@ $(function () {
         if(prevSlide.length === 0) prevSlide = $('.slide').last();
 
         currentSlide.fadeOut(600).removeClass('active-slide');
-        prevSlide.fadeIn(900).addClass('active-slide');
+        prevSlide.fadeIn(800).addClass('active-slide');
     });
 
     // Контент слайдера

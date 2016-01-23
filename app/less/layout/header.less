@@ -365,10 +365,12 @@ header {
         li {
           display: inline;
           float: left;
-          line-height: 60px;
+          line-height: 58px;
           text-align: center;
           font-size: 14px;
           cursor: pointer;
+          box-sizing: border-box;
+          border: 1px solid rgba(0,0,0,0);
           @media (max-width: 991px) {
             width: 100%;
             line-height: 46px;
@@ -405,9 +407,15 @@ header {
         }
         .odd-color {
           background: @lightBlue;
+          &:hover {
+            border: 1px solid @blue;
+          }
         }
         .even-color {
           background: @blue;
+          &:hover {
+            border: 1px solid @lightBlue;
+          }
         }
       }
       .visible-list {
