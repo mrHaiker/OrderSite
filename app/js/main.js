@@ -78,7 +78,7 @@ $(function () {
     });
 
 
-    // Slider
+    // Слайдер
     $('#arrow-next').click(function () {
         var currentSlide = $('.active-slide');
         var nextSlide = currentSlide.next();

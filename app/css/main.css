@@ -1517,6 +1517,11 @@ header .bottom-nav .wrapper .visible-list {
   text-overflow: ellipsis;
   font-weight: 300;
 }
+@media (max-width: 767px) {
+  #discount .wrapper .container .btn-discount {
+    max-width: 260px;
+  }
+}
 #discount .wrapper .container .btn-discount p {
   color: #ffffff;
   line-height: 64px;
@@ -1525,7 +1530,7 @@ header .bottom-nav .wrapper .visible-list {
 }
 @media (max-width: 767px) {
   #discount .wrapper .container .btn-discount p {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 #discount .wrapper .container .btn-discount p span {
@@ -1609,6 +1614,7 @@ header .bottom-nav .wrapper .visible-list {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   #review {
@@ -1653,7 +1659,6 @@ header .bottom-nav .wrapper .visible-list {
 #review .content {
   height: 100%;
   padding: 0;
-  overflow: hidden;
 }
 #review .content li.slide {
   display: table;
@@ -1677,17 +1682,58 @@ header .bottom-nav .wrapper .visible-list {
   line-height: 27px;
   margin-bottom: 12px;
   position: relative;
-  max-height: 260px;
-  overflow: auto;
+  max-height: 180px;
 }
-#review .content li.slide .wrapper p.message:before {
-  content: '';
+@media (max-width: 767px) {
+  #review .content li.slide .wrapper p.message {
+    padding: 35px 0 15px;
+  }
+}
+#review .content li.slide .wrapper p.message:before,
+#review .content li.slide .wrapper p.message:after {
   position: absolute;
   height: 50px;
   width: 50px;
-  top: -50px;
-  left: -50px;
+}
+#review .content li.slide .wrapper p.message:before {
+  content: '';
+  top: -55px;
+  left: -63px;
   background: url(../img/LeftQuote.svg) no-repeat center;
+}
+@media (max-width: 767px) {
+  #review .content li.slide .wrapper p.message:before {
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+  }
+}
+#review .content li.slide .wrapper p.message:after {
+  content: '';
+  right: -36px;
+  background: url(../img/RightQuote.svg) no-repeat center;
+}
+@media (max-width: 767px) {
+  #review .content li.slide .wrapper p.message:after {
+    height: 45px;
+    width: 20px;
+    right: 0;
+    background-size: contain;
+    background-position-y: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #review .content li.slide .wrapper p.message:after {
+    bottom: -60px;
+  }
+}
+@media (max-width: 767px) {
+  #review .content li.slide .wrapper p.message {
+    overflow: auto;
+    font-size: 16px;
+  }
 }
 #review .content li.slide .wrapper p.author {
   font-weight: 700;

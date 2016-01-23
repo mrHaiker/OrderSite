@@ -144,13 +144,16 @@
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: 300;
+        @media (max-width: 767px) {
+          max-width: 260px;
+        }
         p {
           color: #ffffff;
           line-height: 64px;
           font-size: 30px;
           margin: 0;
           @media (max-width: 767px) {
-            font-size: 26px;
+            font-size: 22px;
           }
           span {
             font-weight: 500;

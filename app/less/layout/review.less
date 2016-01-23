@@ -3,9 +3,9 @@
   border-bottom: 1px solid #000000;
   transition: all .3s ease;
   position: relative;
+  overflow: hidden;
   @media (max-width: 767px) {
     height: 350px;
-    //height: 100%;
   }
   .content-box {
     padding: 0;
@@ -43,7 +43,7 @@
   .content {
     height: 100%;
     padding: 0;
-    overflow: hidden;
+    //overflow: hidden;
     li.slide {
       display: table;
       height: 100%;
@@ -51,9 +51,11 @@
       .wrapper {
         display: table-cell;
         vertical-align: middle;
+
         @media (max-width: 767px) {
           padding-bottom: 40px;
         }
+
         p.message {
           color: #8e8e8e;
           font-size: 20px;
@@ -62,16 +64,47 @@
           line-height: 27px;
           margin-bottom: 12px;
           position: relative;
-          max-height: 260px;
-          overflow: auto;
-          &:before {
-            content: '';
+          max-height: 180px;
+          @media (max-width: 767px) {
+            padding: 35px 0 15px;
+          }
+          &:before,
+          &:after {
             position: absolute;
             height: 50px;
             width: 50px;
-            top: -50px;
-            left: -50px;
+          }
+          &:before {
+            content: '';
+            top: -55px;
+            left: -63px;
             background: url(../img/LeftQuote.svg) no-repeat center;
+            @media (max-width: 767px) {
+              height: 30px;
+              width: 30px;
+              top: 0;
+              left: 0;
+              background-size: contain;
+            }
+          }
+          &:after {
+            content: '';
+            right: -36px;
+            background: url(../img/RightQuote.svg) no-repeat center;
+            @media (max-width: 767px) {
+              height: 45px;
+              width: 20px;
+              right: 0;
+              background-size: contain;
+              background-position-y: 25px;
+            }
+            @media (min-width: 768px) {
+              bottom: -60px;
+            }
+          }
+          @media (max-width: 767px) {
+            overflow: auto;
+            font-size: 16px;
           }
         }
         p.author {
