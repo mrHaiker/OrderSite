@@ -126,6 +126,7 @@ $(function () {
     });
 
     // Аккордеон
+    //$('.accordion-item').first().addClass('current');
     $('.accordion-item').click(function () {
         if ($(this).hasClass('current')) return;
 

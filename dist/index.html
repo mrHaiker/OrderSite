@@ -2,15 +2,399 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestOrderSite</title>
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <h3>Hello world</h3>
+<!--Header-->
+<header>
+    <div class="header content-box">
+        <div class="row header-nav">
+            <ul class="menu-btn hidden-md hidden-lg">
+                <li id="list-menu">
+                    <i class="fa fa-bars"></i>
+                </li>
+                <li id="list-contact">
+                    <i class="fa fa-user"></i>
+                </li>
+            </ul>
+            <a href="#" class="logo"></a>
+            <nav>
+                <ul id="nav">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">Order now</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Sampies</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <ul id="btn-contact">
+                    <li>
+                        <i class="fa fa-comment hidden-xs hidden-sm"></i>
+                        <p class="hidden-md hidden-lg">Task</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-user hidden-xs hidden-sm"></i>
+                        <p class="hidden-md hidden-lg">User</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="preview">
+        <div class="content-box">
+            <a href="#" id="btn-order">Order right now</a>
+        </div>
+        <div id="title"></div>
+        <ul id="clouds">
+            <li class="cloud first-cloud"></li>
+            <li class="cloud second-cloud"></li>
+            <li class="cloud third-cloud"></li>
+            <li class="cloud fourth-cloud"></li>
+        </ul>
+    </div>
+    <div class="bottom-nav">
+        <div class="wrapper">
+            <p class="hidden-md hidden-lg">Choose service:</p>
+            <ul id="list-services" class="content-box hidden-mobile">
+                <li class="list odd-color">
+                    <a href="#" class="link-list">Custom term Paper</a>
+                    <i class="fa fa-caret-down hidden-md hidden-lg"></i>
+                </li>
+                <li class="list even-color"><a href="#" class="link-list">Research paper</a></li>
+                <li class="list odd-color"><a href="#" class="link-list">Easy</a></li>
+                <li class="list even-color"><a href="#" class="link-list">Book report</a></li>
+                <li class="list odd-color"><a href="#" class="link-list">Coursework</a></li>
+                <li class="list even-color"><a href="#" class="link-list">Thesis</a></li>
+                <li class="list odd-color"><a href="#" class="link-list">Case study</a></li>
+                <li class="list even-color"><a href="#" class="link-list">Paper writhing services</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!--About our services-->
+<section id="about-our-service">
+    <div class="content-box">
+        <div class="row article">
+            <div class="gr-md-4 gr-xs-8">
+                <div class="circle first-circle"></div>
+                <h3>Any paper</h3>
+                <p>Our term paper writing service follows strict academic standards and professor requirements. This is
+                    what makes our work so valuable. The experience that we have.</p>
+            </div>
+            <div class="gr-md-4 gr-xs-8">
+                <div class="circle second-circle"></div>
+                <h3>Plagiarism check</h3>
+                <p>Our guarantee is that the best term papers are received by every single student that hires us and we
+                    managed to achieve this high.</p>
+            </div>
+            <div class="gr-md-4 gr-xs-8">
+                <div class="circle third-circle"></div>
+                <h3>Trust</h3>
+                <p>Every single student that is currently looking for research papers wants to make sure that quality
+                    is high. We currently use the services of thousands of US certified writers.</p>
+            </div>
+            <div class="gr-md-4 gr-xs-8">
+                <div class="circle fourth-circle"></div>
+                <h3>Support</h3>
+                <p>Our term paper writing service follows strict academic standards and professor requirements. This is
+                    what makes our work so valuable.</p>
+            </div>
+        </div>
+        <div class="order">
+            <p>&mdash; That`s cool,</p>
+            <a href="#" class="btn">I want to order now!</a>
+        </div>
+    </div>
+</section>
+
+<!--Discount-->
+<section id="discount">
+    <ul class="bg-image">
+        <li id="first-time" class="hidden-xs"></li>
+        <li id="clothes-tag"></li>
+        <li id="clothes-tag-1"></li>
+        <li id="percentage-label"></li>
+        <li id="percentage-label-1"></li>
+        <li id="percentage-discount"></li>
+        <li id="percentage-discount-1"></li>
+        <li id="give-money"></li>
+        <li id="give-money-1"></li>
+    </ul>
+    <div class="content-box">
+        <div class="wrapper">
+            <div class="container">
+                <h3> — Is this your first time? <span>Make the first order with 20% OFF!</span> </h3>
+                <div class="btn-discount"><p>Order with <span>20% OFF</span></p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Review-->
+<section id="review">
+    <div class="row content-box">
+        <div id="arrow-prev" class="gr-xs-2 gr-md-3"></div>
+        <ul class="content gr-xs-12 gr-md-10"></ul>
+        <div id="arrow-next" class="gr-xs-2 gr-md-3"></div>
+    </div>
+</section>
+
+<!--Steps-->
+<section id="steps">
+    <div class="content-box">
+        <h2>&mdash; How do you work?</h2>
+        <div class="elements">
+            <ul class="circles">
+                <li class="circle first-circle">1</li>
+                    <li class="arrow first-arrow"></li>
+                <li class="circle second-circle">2</li>
+                    <li class="arrow second-arrow"></li>
+                <li class="circle third-circle">3</li>
+                    <li class="arrow third-arrow"></li>
+                <li class="circle fourth-circle">4</li>
+            </ul>
+            <ul class="row articles">
+                <li class="article first-article">
+                    <h3><span class="hidden-lg hidden-md mobile-circles">1</span>You place order</h3>
+                    <p>Our term paper writing service follows strict academic standards and professor requirements.</p>
+                </li>
+                <li class="article second-article">
+                    <h3><span class="hidden-lg hidden-md mobile-circles">2</span>You submit payment</h3>
+                    <p>Our guarantee is that the best term papers are received by every single student that..</p>
+                </li>
+                <li class="article third-article">
+                    <h3><span class="hidden-lg hidden-md mobile-circles">3</span>We are work</h3>
+                    <p>Every single student that is currently looking for research papers wants to make sure that
+                        quality is high.</p>
+                </li>
+                <li class="article fourth-article">
+                    <h3><span class="hidden-lg hidden-md mobile-circles success icon-checkmark"></span>Your paper done</h3>
+                    <p>Our term paper writing service follows strict academic standards.</p>
+                </li>
+            </ul>
+            <div id="btn-order-step">Place my order</div>
+        </div>
+    </div>
+</section>
+
+<!--Select-->
+<section id="select">
+    <div class="content-box">
+        <h3>&mdash; Select the desired service</h3>
+        <ul id="accordion">
+            <li class="accordion-item current">
+                <i class="fa fa-caret-right rotate"></i>
+                <a class="title">Academic writing services</a>
+                <ul>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item1</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item2</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item3</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item4</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item5</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">item6</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="accordion-item">
+                <i class="fa fa-caret-right"></i>
+                <a class="title">Dissertation services</a>
+                <ul>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Dissertation</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Thesis</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Thesis/Dissertation proposal</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Research proposal</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Editing</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Proofreading</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 19.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Formatting</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Dissertation Chapters</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="accordion-item">
+                <i class="fa fa-caret-right"></i>
+                <a class="title">Admission services</a>
+                <ul>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item1</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item2</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item3</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item4</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item5</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="accordion-item">
+                <i class="fa fa-caret-right"></i>
+                <a class="title">Assignments</a>
+                <ul>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item1</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item2</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="accordion-item">
+                <i class="fa fa-caret-right"></i>
+                <a class="title">Editing services</a>
+                <ul>
+                    <li>
+                        <div class="name gr-xs-12 gr-sm-10 gr-md-8"><a href="#">Item1</a></div>
+                        <div class="price hidden-xs gr-sm-4 gr-md-4"><p><span>from</span> 12.55$</p></div>
+                        <div class="btn btn-more gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Read more</p></div>
+                        <div class="btn order-now gr-xs-2 gr-sm-1 gr-md-2"><p class="hidden-xs hidden-sm">Order-now</p></div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="content-box">
+        <ul class="row bottom-nav">
+            <li><a href="#">Discount Program</a></li>
+            <li><a href="#">Become an Author</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Underqraduate</a></li>
+            <li><a href="#">RH.D</a></li>
+            <li><a href="#">Master</a></li>
+            <li><a href="#">Hiqh school students</a></li>
+            <li><a href="#">Affiliate program</a></li>
+        </ul>
+        <ul class="row payment">
+            <li>We accept:</li>
+            <li><a href="#"><img src="img/visa.png" alt=""></a></li>
+            <li><a href="#"><img src="img/mastercard.png" alt=""></a></li>
+            <li><a href="#"><img src="img/maestro.png" alt=""></a></li>
+            <li><a href="#"><img src="img/american_express.png" alt=""></a></li>
+            <li><a href="#"><img src="img/discover.png" alt=""></a></li>
+            <li><a href="#"><img src="img/wire_transfer.png" alt=""></a></li>
+            <li><a href="#"><img src="img/paypal.png" alt=""></a></li>
+            <li><a href="#"><img src="img/mcafee.png" alt=""></a></li>
+            <li><a href="#"><img src="img/werisign.png" alt=""></a></li>
+        </ul>
+        <p class="about">DISCLAMER: The Company is providing custom writing and research services to its clients
+            for limited use onlyas provided in its Terms and Conditions. It does  not give its consent
+            or authority to the client to copy andreproduce entirely or a portion of any term paper, research
+            paper, thesis paper, essay, dissertation or other products of the Company without
+            proper reference. Furthermore, the Company will not be responsible
+            to third parties for the unauthorized use of its product.</p>
+    </div>
+</footer>
 
 <script src="scripts/vendor.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
+

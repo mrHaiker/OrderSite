@@ -107,7 +107,9 @@ header {
           line-height: @heightNav;
           cursor: pointer;
           &:hover {
-            color: @blue;
+            @media (max-width: 991px) {
+              color: @blue;
+            }
           }
           .fa-comment,
           .fa-user {

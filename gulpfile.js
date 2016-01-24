@@ -19,14 +19,16 @@ var path = {
         js: 'dist/js/',
         css: 'dist/css/',
         img: 'dist/img/',
-        fonts: 'dist/fonts/'
+        fonts: 'dist/fonts/',
+        json: 'dist/json'
     },
     src: { //Пути откуда брать исходники
         html: 'app/*.html',
         js: 'app/js/*.js',
         style: 'app/less/main.less',
         img: 'app/img/**/*.*',
-        fonts: 'app/fonts/**/*.*'
+        fonts: 'app/fonts/**/*.*',
+        json: 'app/json/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'app/**/*.html',
@@ -59,17 +61,13 @@ gulp.task('clean', function () {    // очищаем папку production`a
         .pipe(clean());
 });
 
-gulp.task('fonts', function() {     // отправляем шрифры в dist без изменений
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
+gulp.task('export', function () {   // экспортирует незадействованые файлу в production
+    gulp.src(path.src.img).pipe(gulp.dest(path.build.img));
+    gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts));
+    gulp.src(path.src.json).pipe(gulp.dest(path.build.json));
 });
 
-gulp.task('img', function() {   // отправляем img в dist без изменений
-    gulp.src(path.src.img)
-        .pipe(gulp.dest(path.build.img))
-});
-
-gulp.task('dist', ['fonts', 'img'], function () { // отправляем на production
+gulp.task('dist', ['export'], function () { // отправляем на production
     return gulp.src(path.src.html)
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))

@@ -734,8 +734,10 @@ header .header-nav nav ul#btn-contact li {
   line-height: 95px;
   cursor: pointer;
 }
-header .header-nav nav ul#btn-contact li:hover {
-  color: #3789D3;
+@media (max-width: 991px) {
+  header .header-nav nav ul#btn-contact li:hover {
+    color: #3789D3;
+  }
 }
 header .header-nav nav ul#btn-contact li .fa-comment,
 header .header-nav nav ul#btn-contact li .fa-user {
@@ -2162,7 +2164,6 @@ header .bottom-nav .wrapper .visible-list {
 }
 #select .content-box #accordion li.accordion-item ul {
   font-size: 0;
-  padding-bottom: 20px;
 }
 #select .content-box #accordion li.accordion-item ul li {
   height: 40px;
@@ -2345,6 +2346,12 @@ footer .payment li {
   margin: 0 7px;
   vertical-align: middle;
 }
+footer .payment li:first-child {
+  margin: 0;
+  font-size: 14px;
+  color: #6b6b6b;
+  font-weight: 300;
+}
 @media (max-width: 767px) {
   footer .payment li:first-child {
     width: 100%;
@@ -2353,6 +2360,7 @@ footer .payment li {
 }
 footer .payment li img {
   margin-top: 20px;
+  cursor: pointer;
 }
 footer .about {
   font-weight: 300;
