@@ -1,0 +1,71 @@
+#select {
+  min-height: 940px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+
+  .content-box {
+    text-align: center;
+    h3 {
+      font-weight: 400;
+      font-size: 30px;
+      margin: 92px 0 45px;
+    }
+    #accordion {
+      text-align: left;
+      margin: 0 12%;
+      li.accordion-item {
+        height: 50px;
+        background: @blue;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        line-height: 50px;
+        color: #ffffff;
+        padding: 0 45px;
+        font-size: 20px;
+        text-transform: capitalize;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        //transition: background .5s ease;
+        a.title {
+          border-bottom: 1px dashed #fff;
+          display: inline;
+        }
+        i {
+          position: absolute;
+          font-size: 16px;
+          left: 25px;
+          top: 17px;
+        }
+        ul {
+          li {
+            border-bottom: 1px solid #999999;
+            font-size: 14px;
+            line-height: 40px;
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            p {
+              float: left;
+              margin: 0;
+              padding: 0;
+            }
+            div.btn {
+              float: left;
+              padding: 0;
+            }
+          }
+        }
+      }
+      li.current {
+        height: auto;
+        min-height: 50px;
+        border: 1px solid @blue;
+        background: none;
+        color: @blue;
+      }
+    }
+  }
+}

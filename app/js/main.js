@@ -100,7 +100,6 @@ $(function () {
 
     // Контент слайдера
     $.getJSON('../json/review.json', function (data) {
-        console.log(data);
         var $content = $('#review .content');
 
         for (var i = 0; i < data.length; i++) {
@@ -124,6 +123,19 @@ $(function () {
             $slide.append($wrapper);
             $content.append($slide);
         }
+    });
+
+    // Аккордеон
+    $('.accordion-item').click(function () {
+        var heightContent = $(this).children('ul').height();
+
+        // прячем открытый слайд
+        $('.accordion-item.current').animate({"height": 50},200, function () {
+            $(this).removeClass('current');
+        });
+
+        // открываем новый
+        $(this).animate({"height": heightContent+50},200).addClass('current');
     })
 
 });

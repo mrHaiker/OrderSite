@@ -27,8 +27,11 @@ body {
 .icon-checkmark:before {
   content: "\e900";
 }
-.icon-chevron-thin-left:before {
-  content: "\e902";
+.icon-dots-three-horizontal:before {
+  content: "\e903";
+}
+.icon-shopping_cart:before {
+  content: "\e901";
 }
 .container {
   padding-right: 15px;
@@ -2070,4 +2073,72 @@ header .bottom-nav .wrapper .visible-list {
   border: 1px solid #3fae5c;
   -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+}
+#select {
+  min-height: 940px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+#select .content-box {
+  text-align: center;
+}
+#select .content-box h3 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 92px 0 45px;
+}
+#select .content-box #accordion {
+  text-align: left;
+  margin: 0 12%;
+}
+#select .content-box #accordion li.accordion-item {
+  height: 50px;
+  background: #3789D3;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  line-height: 50px;
+  color: #ffffff;
+  padding: 0 45px;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#select .content-box #accordion li.accordion-item a.title {
+  border-bottom: 1px dashed #fff;
+  display: inline;
+}
+#select .content-box #accordion li.accordion-item i {
+  position: absolute;
+  font-size: 16px;
+  left: 25px;
+  top: 17px;
+}
+#select .content-box #accordion li.accordion-item ul li {
+  border-bottom: 1px solid #999999;
+  font-size: 14px;
+  line-height: 40px;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+#select .content-box #accordion li.accordion-item ul li p {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#select .content-box #accordion li.accordion-item ul li div.btn {
+  float: left;
+  padding: 0;
+}
+#select .content-box #accordion li.current {
+  height: auto;
+  min-height: 50px;
+  border: 1px solid #3789D3;
+  background: none;
+  color: #3789D3;
 }
