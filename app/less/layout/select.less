@@ -28,7 +28,6 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        //transition: background .5s ease;
         a.title {
           border-bottom: 1px dashed #fff;
           display: inline;
@@ -38,25 +37,98 @@
           font-size: 16px;
           left: 25px;
           top: 17px;
+          transform: rotate(0deg);
+        }
+        i.rotate {
+          transform: rotate(90deg);
         }
         ul {
+          font-size: 0;
+          padding-bottom: 20px;
           li {
-            border-bottom: 1px solid #999999;
+            height: 40px;
+            display: block;
+            border-bottom: 1px solid #cfcfcf;
             font-size: 14px;
-            line-height: 40px;
-            display: inline-block;
             width: 100%;
             margin: 0;
+            position: relative;
+            &:hover {
+              .name a:before {
+                opacity: 1;
+              }
+              div.btn.btn-more p{
+                border: 1px solid @blue;
+                color: @blue;
+              }
+              div.btn.order-now p {
+                border: 1px solid @orange;
+                background: @orange;
+                color: #fff;
+              }
+              .name a {
+                text-decoration: underline;
+              }
+            }
+
             p {
-              float: left;
               margin: 0;
               padding: 0;
             }
+            .name,
+            .price {
+              padding: 0;
+              height: 40px;
+            }
+            .name a {
+              color: @blue;
+              margin-left: 20px;
+              &:before {
+                content: '\f111';
+                font-family: 'fontawesome' !important;
+                font-size: 8px;
+                margin-right: 10px;
+                opacity: .3;
+                position: absolute;
+                left: 0;
+              }
+            }
+            .price p {
+              float: right;
+              margin-right: 40px;
+              color: #000;
+              text-transform: none;
+              span {
+                color: #cfcfcf;
+              }
+            }
+
             div.btn {
               float: left;
-              padding: 0;
+              padding: 0 0 0 5px;
+              height: 26px;
+              line-height: 26px;
+              text-align: center;
+              transition: all .3s ease;
+              p {
+                border: 1px solid #999;
+                border-radius: 5px;
+                color: #999;
+                margin-top: 7px;
+              }
+            }
+            div.btn.btn-more p{
+              border: 1px solid #cfcfcf;
+              color: #cfcfcf;
+            }
+            div.btn.order-now p{
+              border: 1px solid #a3a3a3;
+              color: #a3a3a3;
             }
           }
+        }
+        .last-li {
+          margin-bottom: 20px;
         }
       }
       li.current {
@@ -65,6 +137,7 @@
         border: 1px solid @blue;
         background: none;
         color: @blue;
+        padding-bottom: 20px;
       }
     }
   }

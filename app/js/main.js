@@ -127,15 +127,20 @@ $(function () {
 
     // Аккордеон
     $('.accordion-item').click(function () {
+        if ($(this).hasClass('current')) return;
+
         var heightContent = $(this).children('ul').height();
+        var arrow = $(this).children('.fa-caret-right');
 
         // прячем открытый слайд
         $('.accordion-item.current').animate({"height": 50},200, function () {
             $(this).removeClass('current');
+            $(this).children('.fa-caret-right').removeClass('rotate');
         });
 
         // открываем новый
         $(this).animate({"height": heightContent+50},200).addClass('current');
+        arrow.addClass('rotate');
     })
 
 });

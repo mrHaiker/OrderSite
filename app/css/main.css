@@ -2117,23 +2117,100 @@ header .bottom-nav .wrapper .visible-list {
   font-size: 16px;
   left: 25px;
   top: 17px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+#select .content-box #accordion li.accordion-item i.rotate {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#select .content-box #accordion li.accordion-item ul {
+  font-size: 0;
+  padding-bottom: 20px;
 }
 #select .content-box #accordion li.accordion-item ul li {
-  border-bottom: 1px solid #999999;
+  height: 40px;
+  display: block;
+  border-bottom: 1px solid #cfcfcf;
   font-size: 14px;
-  line-height: 40px;
-  display: inline-block;
   width: 100%;
   margin: 0;
+  position: relative;
+}
+#select .content-box #accordion li.accordion-item ul li:hover .name a:before {
+  opacity: 1;
+}
+#select .content-box #accordion li.accordion-item ul li:hover div.btn.btn-more p {
+  border: 1px solid #3789D3;
+  color: #3789D3;
+}
+#select .content-box #accordion li.accordion-item ul li:hover div.btn.order-now p {
+  border: 1px solid #f17c2d;
+  background: #f17c2d;
+  color: #fff;
+}
+#select .content-box #accordion li.accordion-item ul li:hover .name a {
+  text-decoration: underline;
 }
 #select .content-box #accordion li.accordion-item ul li p {
-  float: left;
   margin: 0;
   padding: 0;
+}
+#select .content-box #accordion li.accordion-item ul li .name,
+#select .content-box #accordion li.accordion-item ul li .price {
+  padding: 0;
+  height: 40px;
+}
+#select .content-box #accordion li.accordion-item ul li .name a {
+  color: #3789D3;
+  margin-left: 20px;
+}
+#select .content-box #accordion li.accordion-item ul li .name a:before {
+  content: '\f111';
+  font-family: 'fontawesome' !important;
+  font-size: 8px;
+  margin-right: 10px;
+  opacity: .3;
+  position: absolute;
+  left: 0;
+}
+#select .content-box #accordion li.accordion-item ul li .price p {
+  float: right;
+  margin-right: 40px;
+  color: #000;
+  text-transform: none;
+}
+#select .content-box #accordion li.accordion-item ul li .price p span {
+  color: #cfcfcf;
 }
 #select .content-box #accordion li.accordion-item ul li div.btn {
   float: left;
-  padding: 0;
+  padding: 0 0 0 5px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#select .content-box #accordion li.accordion-item ul li div.btn p {
+  border: 1px solid #999;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #999;
+  margin-top: 7px;
+}
+#select .content-box #accordion li.accordion-item ul li div.btn.btn-more p {
+  border: 1px solid #cfcfcf;
+  color: #cfcfcf;
+}
+#select .content-box #accordion li.accordion-item ul li div.btn.order-now p {
+  border: 1px solid #a3a3a3;
+  color: #a3a3a3;
+}
+#select .content-box #accordion li.accordion-item .last-li {
+  margin-bottom: 20px;
 }
 #select .content-box #accordion li.current {
   height: auto;
@@ -2141,4 +2218,5 @@ header .bottom-nav .wrapper .visible-list {
   border: 1px solid #3789D3;
   background: none;
   color: #3789D3;
+  padding-bottom: 20px;
 }
