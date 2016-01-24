@@ -1,12 +1,27 @@
 #select {
-  min-height: 940px;
+  min-height: 340px;
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid #000;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    background: url(../../img/shadow_select.png) no-repeat center;
+    background-size: contain;
+  }
+  @media (max-width: 767px) {
+    min-height: 350px;
+  }
 
   .content-box {
     text-align: center;
+    margin-bottom: 100px;
+    @media (max-width: 991px) {
+      margin-bottom: 80px;
+    }
     h3 {
       font-weight: 400;
       font-size: 30px;
@@ -15,6 +30,9 @@
     #accordion {
       text-align: left;
       margin: 0 12%;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
       li.accordion-item {
         height: 50px;
         background: @blue;
@@ -28,9 +46,15 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        @media (max-width: 767px) {
+          padding: 0 20px;
+        }
         a.title {
           border-bottom: 1px dashed #fff;
           display: inline;
+          @media (max-width: 767px) {
+            margin-left: 25px;
+          }
         }
         i {
           position: absolute;
@@ -42,7 +66,7 @@
         i.rotate {
           transform: rotate(90deg);
         }
-        ul {
+        ul {  // Список всех элементов внутри открытого окна
           font-size: 0;
           padding-bottom: 20px;
           li {
@@ -79,6 +103,9 @@
             .price {
               padding: 0;
               height: 40px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overline: ellipsis;
             }
             .name a {
               color: @blue;
@@ -110,6 +137,9 @@
               line-height: 26px;
               text-align: center;
               transition: all .3s ease;
+              @media (max-width: 991px) {
+                margin-top: 10px;
+              }
               p {
                 border: 1px solid #999;
                 border-radius: 5px;
@@ -117,13 +147,55 @@
                 margin-top: 7px;
               }
             }
-            div.btn.btn-more p{
-              border: 1px solid #cfcfcf;
-              color: #cfcfcf;
+            div.btn.btn-more {
+              &:before {
+                @media (max-width: 991px) {
+                  content: '\e903';
+                  color: @blue;
+                  border: 1px solid @blue;
+                }
+              }
+              p {
+                border: 1px solid #cfcfcf;
+                color: #cfcfcf;
+              }
             }
-            div.btn.order-now p{
-              border: 1px solid #a3a3a3;
-              color: #a3a3a3;
+            div.btn.btn-more:hover::before {
+              color: #fff;
+              background: @blue;
+            }
+            div.btn.order-now {
+              &:before {
+                @media (max-width: 991px) {
+                  content: '\e901';
+                  background: @orange;
+                  color: #fff;
+                }
+              }
+              p {
+                border: 1px solid #a3a3a3;
+                color: #a3a3a3;
+              }
+            }
+            div.btn.order-now:hover::before {
+              color: @orange;
+              border: 1px solid @orange;
+              background: none;
+            }
+            div.btn.btn-more:before,
+            div.btn.order-now:before {
+              @media (max-width: 991px) {
+                font-family: 'icomoon';
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 5px;
+              }
+              @media (max-width: 325px) {
+                font-family: 'icomoon';
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 5px;
+              }
             }
           }
         }

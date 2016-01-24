@@ -2062,7 +2062,7 @@ header .bottom-nav .wrapper .visible-list {
 }
 @media (max-width: 991px) {
   #steps .content-box .elements #btn-order-step {
-    margin: 0 auto;
+    margin: 0 auto 60px;
     max-width: 240px;
     font-size: 22px;
   }
@@ -2075,14 +2075,33 @@ header .bottom-nav .wrapper .visible-list {
           box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
 }
 #select {
-  min-height: 940px;
+  min-height: 340px;
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid #000;
+}
+#select:after {
+  content: '';
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  background: url(../../img/shadow_select.png) no-repeat center;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  #select {
+    min-height: 350px;
+  }
 }
 #select .content-box {
   text-align: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 991px) {
+  #select .content-box {
+    margin-bottom: 80px;
+  }
 }
 #select .content-box h3 {
   font-weight: 400;
@@ -2092,6 +2111,11 @@ header .bottom-nav .wrapper .visible-list {
 #select .content-box #accordion {
   text-align: left;
   margin: 0 12%;
+}
+@media (max-width: 767px) {
+  #select .content-box #accordion {
+    margin: 0;
+  }
 }
 #select .content-box #accordion li.accordion-item {
   height: 50px;
@@ -2108,9 +2132,19 @@ header .bottom-nav .wrapper .visible-list {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  #select .content-box #accordion li.accordion-item {
+    padding: 0 20px;
+  }
+}
 #select .content-box #accordion li.accordion-item a.title {
   border-bottom: 1px dashed #fff;
   display: inline;
+}
+@media (max-width: 767px) {
+  #select .content-box #accordion li.accordion-item a.title {
+    margin-left: 25px;
+  }
 }
 #select .content-box #accordion li.accordion-item i {
   position: absolute;
@@ -2162,6 +2196,9 @@ header .bottom-nav .wrapper .visible-list {
 #select .content-box #accordion li.accordion-item ul li .price {
   padding: 0;
   height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overline: ellipsis;
 }
 #select .content-box #accordion li.accordion-item ul li .name a {
   color: #3789D3;
@@ -2194,6 +2231,11 @@ header .bottom-nav .wrapper .visible-list {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
+@media (max-width: 991px) {
+  #select .content-box #accordion li.accordion-item ul li div.btn {
+    margin-top: 10px;
+  }
+}
 #select .content-box #accordion li.accordion-item ul li div.btn p {
   border: 1px solid #999;
   -webkit-border-radius: 5px;
@@ -2201,13 +2243,56 @@ header .bottom-nav .wrapper .visible-list {
   color: #999;
   margin-top: 7px;
 }
+@media (max-width: 991px) {
+  #select .content-box #accordion li.accordion-item ul li div.btn.btn-more:before {
+    content: '\e903';
+    color: #3789D3;
+    border: 1px solid #3789D3;
+  }
+}
 #select .content-box #accordion li.accordion-item ul li div.btn.btn-more p {
   border: 1px solid #cfcfcf;
   color: #cfcfcf;
 }
+#select .content-box #accordion li.accordion-item ul li div.btn.btn-more:hover::before {
+  color: #fff;
+  background: #3789D3;
+}
+@media (max-width: 991px) {
+  #select .content-box #accordion li.accordion-item ul li div.btn.order-now:before {
+    content: '\e901';
+    background: #f17c2d;
+    color: #fff;
+  }
+}
 #select .content-box #accordion li.accordion-item ul li div.btn.order-now p {
   border: 1px solid #a3a3a3;
   color: #a3a3a3;
+}
+#select .content-box #accordion li.accordion-item ul li div.btn.order-now:hover::before {
+  color: #f17c2d;
+  border: 1px solid #f17c2d;
+  background: none;
+}
+@media (max-width: 991px) {
+  #select .content-box #accordion li.accordion-item ul li div.btn.btn-more:before,
+  #select .content-box #accordion li.accordion-item ul li div.btn.order-now:before {
+    font-family: 'icomoon';
+    font-size: 18px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
+}
+@media (max-width: 325px) {
+  #select .content-box #accordion li.accordion-item ul li div.btn.btn-more:before,
+  #select .content-box #accordion li.accordion-item ul li div.btn.order-now:before {
+    font-family: 'icomoon';
+    font-size: 14px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
 }
 #select .content-box #accordion li.accordion-item .last-li {
   margin-bottom: 20px;
@@ -2219,4 +2304,63 @@ header .bottom-nav .wrapper .visible-list {
   background: none;
   color: #3789D3;
   padding-bottom: 20px;
+}
+footer {
+  min-height: 500px;
+  position: relative;
+  text-align: center;
+}
+footer .bottom-nav {
+  padding: 68px 10%;
+}
+@media (max-width: 767px) {
+  footer .bottom-nav {
+    padding: 0;
+  }
+}
+footer .bottom-nav li {
+  display: inline-block;
+  margin: 10px 15px;
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  footer .bottom-nav li {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 15px;
+  }
+}
+footer .bottom-nav li a {
+  text-decoration: underline;
+  color: #6b6b6b;
+}
+footer .payment li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 7px;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  footer .payment li:first-child {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+footer .payment li img {
+  margin-top: 20px;
+}
+footer .about {
+  font-weight: 300;
+  color: #cbcbcb;
+  padding: 0 60px;
+}
+@media (max-width: 767px) {
+  footer .about {
+    padding: 0 15px;
+  }
 }
