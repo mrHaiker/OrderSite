@@ -2035,6 +2035,7 @@ header .bottom-nav .wrapper .visible-list {
     content: '';
     position: absolute;
     bottom: -45px;
+    left: 50%;
     height: 50px;
     width: 20px;
   }
