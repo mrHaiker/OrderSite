@@ -83,6 +83,12 @@ header {
           }
           a {
             color: #999999;
+            @media (min-width: 992px) {
+              padding: 30px 0;
+            }
+            @media (max-width: 991px) {
+              padding: 15px 30%;
+            }
           }
         }
         @media (max-width: 991px) {
@@ -107,9 +113,18 @@ header {
           line-height: @heightNav;
           cursor: pointer;
           &:hover {
-            @media (max-width: 991px) {
-              color: @blue;
+            p {
+              @media (max-width: 991px) {
+                color: @blue !important;
+              }
             }
+          }
+          a i{
+            color: #fff;
+          }
+          a p {
+            color: #dedede;
+            font-size: 12px;
           }
           .fa-comment,
           .fa-user {
@@ -136,7 +151,6 @@ header {
           @media (max-width: 991px) {
             display: block;
             line-height: 50px;
-            color: #dedede;
             border-bottom: 1px solid #444;
             p {
               margin: 0;
@@ -372,7 +386,6 @@ header {
           font-size: 14px;
           cursor: pointer;
           box-sizing: border-box;
-          border: 1px solid rgba(0,0,0,0);
           @media (max-width: 991px) {
             width: 100%;
             line-height: 46px;
@@ -383,9 +396,12 @@ header {
             color: #ffffff;
             text-transform: capitalize;
             padding: 20px 28px;
-            transition: all .5s ease;
+            transition: all .3s ease;
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
+            &:hover {
+              color: #cdcdcd;
+            }
             @media (max-width: 1150px) {
               padding: 20px 18px;
             }
@@ -409,15 +425,9 @@ header {
         }
         .odd-color {
           background: @lightBlue;
-          &:hover {
-            border: 1px solid @blue;
-          }
         }
         .even-color {
           background: @blue;
-          &:hover {
-            border: 1px solid @lightBlue;
-          }
         }
       }
       .visible-list {
